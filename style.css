@@ -1,0 +1,84 @@
+body {
+  background-color: #1f2632;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: 'Manrope', sans-serif;
+}
+
+.card {
+  background-color: #323a49;
+  color: #cee3e9;
+  text-align: center;
+  border-radius: 15px;
+  padding: 30px;
+  width: 300px;
+  height: 150px;
+  position: relative;
+  
+}
+
+h4 {
+  color: #52ffa8;
+  font-size: 12px;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
+  
+}
+
+p {
+  font-size: 18px;
+  font-weight: 800;
+  margin-bottom: 24px;
+  line-height: 22px;
+}
+
+.divisor {
+  width: 100%;
+  height: 1px;
+  background-color: #4e5d73;
+  position: relative;
+  margin: 26px 0;
+}
+
+.textos {
+    transform: translateY(-20px);
+}
+
+.divisor::before,
+.divisor::after {
+  content: "";
+  position: absolute;
+  width: 5px;
+  height: 16px;
+  background-color: #cee3e9;
+  border-radius: 20%;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.divisor::before {
+  left: 45%;
+}
+
+.divisor::after {
+  right: 45%;
+}
+
+.botao {
+  background-color: #52ffa8;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 24px;
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  cursor: pointer;
+}
